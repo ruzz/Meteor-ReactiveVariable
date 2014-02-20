@@ -37,7 +37,7 @@
  *
  *      var showEditingPanel = new ReactiveVariable({
  *          name: "showEditingPanel"
- *          ,defaultValue: 'http://ruzz.org"
+ *          ,defaultValue: 'ruzz"
  *          ,beforeSet: function(value){
  *               return value + 'is awesome!'
  *          }
