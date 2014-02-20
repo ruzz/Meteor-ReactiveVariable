@@ -69,7 +69,7 @@
 
 ReactiveVariable = function(config){
     var self = this,
-        originalConfig = config,
+        _originalConfig = config,
         _defaultValue = null,
         _dictionary = { get: function(){} ,set: function(){}, type: 'memory'},
         _deps = new Deps.Dependency,
@@ -86,6 +86,7 @@ ReactiveVariable = function(config){
         if (typeof( config.dictionary ) === 'object') {
             _dictionary = config.dictionary;
             _transport = 'ReactiveDict';
+            _dictionary.set(config.name, config.defaultValue);
         }
 
 
@@ -96,7 +97,7 @@ ReactiveVariable = function(config){
     var _set = function( value ) {
         var newValue = _beforeSet( value );
         if (_transport){
-            _dictionary.set(originalConfig.name, value);
+            _dictionary.set(_originalConfig.name, value);
             return;
         }
         _defaultValue = newValue;
@@ -109,7 +110,7 @@ ReactiveVariable = function(config){
         var value;
 
         if (_transport) {
-          value  = _afterGet( _dictionary.get(originalConfig.name));
+          value  = _afterGet( _dictionary.get(_originalConfig.name));
         } else {
             value = _afterGet(_defaultValue);
             _deps.depend();
