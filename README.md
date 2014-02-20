@@ -39,7 +39,7 @@ Two hooks for before setting the value or after getting the value.
  
        var showEditingPanel = new ReactiveVariable({
            name: "showEditingPanel"
-           ,defaultValue: 'http://ruzz.org"
+           ,defaultValue: 'ruzz"
            ,beforeSet: function(value){
                 return value + 'is awesome!'
            }
