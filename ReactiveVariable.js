@@ -60,7 +60,7 @@
  *
  *
  *
- *      @version 0.3
+ *      @version 0.3.1
  *      @author imruzz@gmail.com
  *      @param {object} config
  *      @todo: flesh out the equals function
@@ -80,18 +80,19 @@ ReactiveVariable = function(config){
     var setup = function (config){
 
         if (!typeof(config) === "object" ) return;
-        _defaultValue = (typeof( config.defaultValue ) === 'undefined') ? '' : config.defaultValue;
+        config.defaultValue = (typeof( config.defaultValue ) === 'undefined') ? '' : config.defaultValue;
         if (typeof( config.beforeSet ) === 'function') _beforeSet = config.beforeSet;
         if (typeof( config.afterGet ) === 'function') _afterGet = config.afterGet;
         if (typeof( config.dictionary ) === 'object') {
             _dictionary = config.dictionary;
             _transport = 'ReactiveDict';
-            _dictionary.set(config.name, config.defaultValue);
+            _dictionary.set(config.name, _beforeSet(config.defaultValue));
+        } else {
+
+            _defaultValue = _beforeSet(config.defaultValue);
         }
-
-
-
     }
+    
     setup(config);
 
     var _set = function( value ) {
