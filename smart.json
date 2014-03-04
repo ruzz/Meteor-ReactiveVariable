@@ -4,6 +4,5 @@
    "homepage": "http://brightmonkey.ca",
    "author": "i.m. ruzz (ruzz@brightmonkey.ca)",
    "version": "0.3.2",
-   "git": "https://github.com/ruzz/Meteor-ReactiveVariable.git",
-   "packages" : {}
+   "git": "https://github.com/ruzz/Meteor-ReactiveVariable.git"
 }
