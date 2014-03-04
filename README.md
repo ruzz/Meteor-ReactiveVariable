@@ -3,6 +3,8 @@ Meteor-ReactiveVariable
 
 A simple wrapper class for easy creation/access to Meteor reactive variables (using session or not)
 
+now wrapped up as a meteorite package. 
+
 Usage:
 
 Easy to use wrapper for reactive variables can use Session or not

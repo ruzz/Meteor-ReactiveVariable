@@ -1,0 +1,9 @@
+{
+   "name": "reactive-variable",
+   "description": "a slightly more flexible way to do reactive variables",
+   "homepage": "http://brightmonkey.ca",
+   "author": "i.m. ruzz",
+   "version": "0.3.1",
+   "git": "https://github.com/ruzz",
+   "packages" : {}
+}
