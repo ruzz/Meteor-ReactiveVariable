@@ -3,6 +3,6 @@
    "description": "a slightly more flexible way to do reactive variables",
    "homepage": "https://github.com/ruzz/Meteor-ReactiveVariable.git",
    "author": "imruzz <ruzz@brightmonkey.ca>",
-   "version": "0.3.4",
+   "version": "0.3.5",
    "git": "https://github.com/ruzz/Meteor-ReactiveVariable.git"
 }
