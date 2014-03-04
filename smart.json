@@ -1,7 +1,7 @@
 {
    "name": "reactive-variable",
    "description": "a slightly more flexible way to do reactive variables",
-   "homepage": "http://brightmonkey.ca",
+   "homepage": "https://github.com/ruzz/Meteor-ReactiveVariable.git",
    "author": "i.m. ruzz (ruzz@brightmonkey.ca)",
    "version": "0.3.2",
    "git": "https://github.com/ruzz/Meteor-ReactiveVariable.git"
