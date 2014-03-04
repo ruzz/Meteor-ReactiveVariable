@@ -1,5 +1,5 @@
 {
-   "name": "reactive-variable-bm",
+   "name": "reactive-variable",
    "description": "a slightly more flexible way to do reactive variables",
    "homepage": "https://github.com/ruzz/Meteor-ReactiveVariable.git",
    "author": "i.m. ruzz (ruzz@brightmonkey.ca)",
