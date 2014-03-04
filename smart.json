@@ -2,8 +2,8 @@
    "name": "reactive-variable",
    "description": "a slightly more flexible way to do reactive variables",
    "homepage": "http://brightmonkey.ca",
-   "author": "i.m. ruzz",
+   "author": "i.m. ruzz (ruzz@brightmonkey.ca)",
    "version": "0.3.2",
-   "git": "https://github.com/ruzz",
+   "git": "https://github.com/ruzz/Meteor-ReactiveVariable.git",
    "packages" : {}
 }
